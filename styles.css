@@ -1,4 +1,70 @@
-/* --- Navigation Bar Updates for Responsiveness --- */
+/*
+ * Color Variables:
+ * Defining these at the root makes them easy to reuse throughout your CSS.
+ */
+:root {
+    --primary-blue: #044973;
+    --white: #ffffff;
+    --accent-blue: #00aae3;
+    --dark-navy: #032130;
+    --black: #000000;
+}
+
+/* * Global/Reset Styles 
+ */
+body {
+    font-family: Arial, sans-serif; /* A clear, simple font */
+    margin: 0; /* Remove default browser margin */
+    padding: 0; /* Remove default browser padding */
+    background-color: var(--white);
+    color: var(--dark-navy);
+    line-height: 1.6;
+}
+
+/* * Navigation Bar Styles (Desktop/Default)
+ */
+.navbar {
+    background-color: var(--primary-blue);
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex; /* For aligning logo and links */
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Needed for mobile absolute positioning */
+}
+
+.site-title {
+    color: var(--white); 
+    font-size: 1.5em; 
+    font-weight: bold; 
+    padding-left: 20px;
+    text-decoration: none; /* Make title look like a link */
+}
+
+.nav-links {
+    list-style: none; /* Remove bullet points */
+    display: flex;
+    justify-content: flex-end; /* Push links to the right */
+    padding: 0;
+    margin: 0;
+    margin-right: 20px;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: var(--white); /* White text for navigation */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.nav-links a:hover {
+    color: var(--accent-blue); /* Change to accent blue on hover */
+}
 
 /* Style for the Menu/Hamburger button */
 .menu-toggle {
@@ -8,10 +74,48 @@
     background: none;
     border: none;
     cursor: pointer;
-    padding: 0 15px;
+    padding: 0 20px;
 }
 
-/* On small screens, the nav links should stack */
+/* * Main Content Area 
+ */
+.container {
+    max-width: 1200px;
+    margin: 40px auto; /* Center the main content area */
+    padding: 0 20px;
+    min-height: 70vh; /* Ensure content pushes footer down */
+}
+
+/* * Hero Section Style for Index Page 
+ */
+.hero {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 80px 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+/* * Footer Styles
+ */
+footer {
+    background-color: var(--dark-navy); 
+    color: var(--white); 
+    text-align: center; 
+    padding: 20px; 
+    margin-top: 40px;
+}
+
+/* --- Media Query for Mobile Responsiveness --- */
 @media (max-width: 768px) {
     
     .nav-links {
@@ -20,10 +124,11 @@
         flex-direction: column; /* Stack links vertically */
         width: 100%; /* Take full width */
         background-color: var(--primary-blue);
-        position: absolute; /* Position under the header/button */
-        top: 60px; /* Adjust this value based on the height of your navbar */
+        position: absolute; 
+        top: 60px; /* Position below the header/button row */
         left: 0;
         z-index: 1000;
+        margin: 0; /* Remove margin added for desktop */
     }
 
     .nav-links.active {
@@ -39,21 +144,15 @@
     }
     
     .nav-links a {
-        display: block; /* Make the link take up the full width of the list item */
+        display: block; /* Make the link take up the full width */
         padding: 15px;
-    }
-
-    .navbar {
-        /* Adjust navbar display to hold the logo/title and the toggle button */
-        display: flex;
-        justify-content: space-between; /* Space out the content and the button */
-        align-items: center;
-        padding: 10px 0; /* Reduced vertical padding */
-        position: relative; /* Needed for absolute positioning of nav-links */
     }
     
     .menu-toggle {
         display: block; /* Show the menu button on mobile */
     }
-    
+
+    .navbar {
+        padding: 10px 0; /* Reduced vertical padding on mobile */
+    }
 }
