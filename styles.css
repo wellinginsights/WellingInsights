@@ -152,7 +152,7 @@ footer {
     margin-top: 0;
 }
 
-/* --- CONTACT FORM STYLES (for embedding) --- */
+/* --- CONTACT FORM STYLES (for embedding - kept for legacy) --- */
 .form-embed-container {
     display: flex;
     justify-content: center;
@@ -225,10 +225,20 @@ footer {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
+.product-icon {
+    font-size: 3em; /* Large icon size */
+    color: var(--accent-blue);
+    margin-bottom: 10px;
+    display: block;
+}
+
 .product-item h2 {
-    color: var(--primary-blue);
     font-size: 1.5em;
-    margin-top: 0;
+    color: var(--primary-blue);
+    margin-top: 5px;
+    border-bottom: 2px solid var(--accent-blue);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .product-price {
