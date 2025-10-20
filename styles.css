@@ -1,1 +1,59 @@
+/* --- Navigation Bar Updates for Responsiveness --- */
 
+/* Style for the Menu/Hamburger button */
+.menu-toggle {
+    display: none; /* Hide the button by default on desktop */
+    font-size: 24px;
+    color: var(--white);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 15px;
+}
+
+/* On small screens, the nav links should stack */
+@media (max-width: 768px) {
+    
+    .nav-links {
+        /* Default state: Hide the links on mobile */
+        display: none;
+        flex-direction: column; /* Stack links vertically */
+        width: 100%; /* Take full width */
+        background-color: var(--primary-blue);
+        position: absolute; /* Position under the header/button */
+        top: 60px; /* Adjust this value based on the height of your navbar */
+        left: 0;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        /* When the 'active' class is added via JavaScript, show the links */
+        display: flex; 
+        border-top: 1px solid var(--accent-blue);
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .nav-links a {
+        display: block; /* Make the link take up the full width of the list item */
+        padding: 15px;
+    }
+
+    .navbar {
+        /* Adjust navbar display to hold the logo/title and the toggle button */
+        display: flex;
+        justify-content: space-between; /* Space out the content and the button */
+        align-items: center;
+        padding: 10px 0; /* Reduced vertical padding */
+        position: relative; /* Needed for absolute positioning of nav-links */
+    }
+    
+    .menu-toggle {
+        display: block; /* Show the menu button on mobile */
+    }
+    
+}
