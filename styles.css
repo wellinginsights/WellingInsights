@@ -253,6 +253,44 @@ footer {
     background-color: var(--primary-blue);
 }
 
+/* --- CHECKLIST CONTENT STYLES (for ir-dr-checklist.html) --- */
+
+.checklist-section {
+    margin-bottom: 50px;
+    padding: 30px;
+    background-color: #f9f9f9; /* Light gray background */
+    border-left: 5px solid var(--primary-blue);
+    border-radius: 4px;
+}
+
+.checklist-section h2 {
+    color: var(--primary-blue);
+    border-bottom: 2px solid var(--accent-blue);
+    padding-bottom: 10px;
+}
+
+.checklist-section ul {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0;
+}
+
+.checklist-section li {
+    /* Custom bullet: blue checkmark SVG */
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="%2300aae3" d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>') no-repeat left 5px;
+    background-size: 18px;
+    padding-left: 30px; /* Space for the checkmark */
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.checklist-section p.why {
+    font-style: italic;
+    color: var(--dark-navy);
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+
+
 /* --- BACK TO TOP BUTTON STYLES --- */
 
 #back-to-top {
