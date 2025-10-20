@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Pages Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding-top: 50px;
-            background-color: #f0f0f0;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #666;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hello World! 👋</h1>
-    <p>This is my first website hosted with GitHub Pages.</p>
-    <p>I built this using the **`index.html`** file in my repository.</p>
+
+    <nav class="navbar">
+        <div style="color: var(--white); font-size: 1.5em; font-weight: bold; padding-left: 20px;">
+            My Site
+        </div>
+        
+        <button class="menu-toggle" aria-label="Toggle navigation menu" id="menu-toggle">
+            &#9776; </button>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Services (Home)</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="about.html">About Me</a></li>
+        </ul>
+    </nav>
+    <script src="script.js"></script>
 </body>
 </html>
