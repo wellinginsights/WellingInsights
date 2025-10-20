@@ -5,6 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Managed Security Assurance Retainer - Welling Insights</title> 
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* New Styles for the Retainer Detail Page */
+        .guarantee-box {
+            background-color: var(--accent-blue);
+            color: var(--dark-navy);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 30px 0;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+        .process-step {
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            text-align: center;
+            background-color: #fcfcfc;
+        }
+        .step-number {
+            font-size: 2em;
+            color: var(--primary-blue);
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .value-feature {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
 <body>
 
@@ -26,40 +66,72 @@
             <p style="text-align: center; margin-bottom: 20px;"><a href="products.html" style="color: var(--accent-blue); text-decoration: none;">&larr; Back to All Products</a></p>
             
             <h1 style="color: var(--primary-blue); text-align: center; font-size: 2.5em;">Managed Security Assurance (MSA) Retainer</h1>
-            <p style="text-align: center; font-size: 1.2em; color: var(--dark-navy);">Proactive, predictable, monthly support to maintain a strong security posture.</p>
+            <p style="text-align: center; font-size: 1.2em; color: var(--dark-navy);">The predictable, monthly retainer for **proactive cybersecurity oversight** without the cost of a full-time employee.</p>
 
-            <hr style="margin: 30px 0;">
+            <div class="guarantee-box">
+                🛡️ **Your Proactive Defense:** Stop reacting to threats. This retainer guarantees continuous review and guidance to keep your foundational security current.
+            </div>
+
+            <hr style="margin: 40px 0;">
 
             <section style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;">
                 
-                <div style="flex: 1 1 300px; padding: 20px; border: 1px solid var(--accent-blue); border-radius: 8px; background-color: #f0f8ff; text-align: center;">
-                    <div style="font-size: 1.5em; font-weight: bold; color: var(--dark-navy); margin-bottom: 10px;">Investment</div>
-                    <div style="font-size: 2.5em; font-weight: bold; color: var(--primary-blue); margin-bottom: 20px;">Starts at $99/mo</div>
+                <div style="flex: 1 1 300px; padding: 20px; border: 1px solid var(--primary-blue); border-radius: 8px; background-color: #f0f8ff; text-align: center;">
+                    <div style="font-size: 1.5em; font-weight: bold; color: var(--dark-navy); margin-bottom: 10px;">Monthly Investment</div>
+                    <div style="font-size: 3em; font-weight: bold; color: var(--primary-blue); margin-bottom: 20px;">\$99 - \$299</div>
                     
                     <a href="[YOUR_MSA_STRIPE_SUBSCRIPTION_URL_HERE]" target="_blank" style="display: block; background-color: var(--accent-blue); color: var(--white); padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 1.1em; transition: background-color 0.3s;">
                         Start Monthly Assurance &rarr;
                     </a>
-                    <p style="font-size: 0.9em; color: gray; margin-top: 15px;">This product requires a Stripe Subscription setup.</p>
+                    <p style="font-size: 0.9em; color: gray; margin-top: 15px;">Ideal for SMBs lacking dedicated security staff.</p>
                 </div>
                 
                 <div style="flex: 2 1 450px;">
-                    <h2 style="color: var(--primary-blue);">What This Product Solves</h2>
-                    <p>SMBs rarely have the resources for continuous security monitoring. This retainer closes the gap, offering **proactive risk mitigation** by ensuring your foundational security elements (firewall rules, patch management, access control lists) are regularly reviewed and updated, preventing costly incidents before they happen.</p>
+                    <h2 style="color: var(--primary-blue);">Why Choose the MSA Retainer?</h2>
+                    <p>Technology should support your success, not slow you down. If constant security worries, unmanaged updates, or uncertain access controls are holding you back, it's time for continuous, expert oversight. The MSA Retainer ensures your foundational security elements are monitored and addressed proactively.</p>
 
-                    <h2 style="color: var(--primary-blue); margin-top: 40px;">Key Features & Deliverables</h2>
-                    <ul style="list-style-type: none; padding-left: 0;">
-                        <li style="margin-bottom: 15px; background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="%23044973" d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>') no-repeat left 5px; background-size: 18px; padding-left: 30px;">
-                            <strong>Monthly Vulnerability Scan Summary:</strong> Get a simple, actionable report identifying critical issues on your external systems, delivered right to your inbox.
-                        </li>
-                        <li style="margin-bottom: 15px; background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="%23044973" d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>') no-repeat left 5px; background-size: 18px; padding-left: 30px;">
-                            <strong>Quarterly Access Control Review:</strong> A project management-style audit of all user accounts to ensure the principle of **least privilege** is maintained, reducing insider threats.
-                        </li>
-                        <li style="margin-bottom: 15px; background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="%23044973" d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>') no-repeat left 5px; background-size: 18px; padding-left: 30px;">
-                            <strong>Critical Software Patch Management Alerts:</strong> Timely, prioritized alerts for security patches on commonly used software, telling you *when* and *what* to update to avoid common exploits.
-                        </li>
-                    </ul>
+                    <div class="value-feature">
+                        **1. Monthly Vulnerability Scan Summary** <br> A simple, actionable report identifying critical external issues.
+                    </div>
+                    <div class="value-feature">
+                        **2. Quarterly Access Control Review** <br> A structured audit of user accounts to enforce the principle of **least privilege**.
+                    </div>
+                    <div class="value-feature">
+                        **3. Critical Patch Management Alerts** <br> Timely, prioritized guidance on *what* software needs patching *when* to block common exploits.
+                    </div>
+
+                    <p style="margin-top: 30px;"><a href="contact.html" style="color: var(--primary-blue); font-weight: bold;">Schedule a call</a> to define the right tier for your business size and needs.</p>
                 </div>
             </section>
+
+            <hr style="margin: 50px 0;">
+
+            <h2 style="text-align: center; color: var(--primary-blue);">Our Security Assurance Process</h2>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto 30px;">Getting started with continuous security monitoring should be simple. Our proven process removes friction and delivers stability from day one.</p>
+
+            <div class="process-grid">
+                <div class="process-step">
+                    <span class="step-number">1</span>
+                    <h3>Discovery & Onboarding</h3>
+                    <p>We discuss your current infrastructure and security needs to tailor the MSA package precisely to your environment.</p>
+                </div>
+                <div class="process-step">
+                    <span class="step-number">2</span>
+                    <h3>Initial Baseline Scan</h3>
+                    <p>A comprehensive initial scan establishes your current security posture, identifying any immediate critical risks.</p>
+                </div>
+                <div class="process-step">
+                    <span class="step-number">3</span>
+                    <h3>Proactive Monitoring</h3>
+                    <p>The monthly retainer begins, providing continuous review of patches, access lists, and vulnerability alerts.</p>
+                </div>
+                <div class="process-step">
+                    <span class="step-number">4</span>
+                    <h3>Reporting & Review</h3>
+                    <p>We deliver your monthly and quarterly reports, providing expert guidance and actionable next steps for your team.</p>
+                </div>
+            </div>
+            
         </div>
         
     </main>
