@@ -155,4 +155,63 @@ footer {
     .navbar {
         padding: 10px 0; /* Reduced vertical padding on mobile */
     }
+    /* --- CONTACT FORM STYLES --- */
+
+.contact-form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    border: 1px solid var(--accent-blue);
+    border-radius: 8px; /* Slightly rounded corners */
+    background-color: var(--white);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form div {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--dark-navy);
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--primary-blue); /* Highlight focused field */
+    outline: none; /* Remove default browser outline */
+}
+
+.contact-form textarea {
+    resize: vertical; /* Allow resizing only vertically */
+}
+
+.contact-form button[type="submit"] {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: var(--accent-blue); /* Use accent color for hover */
+}
 }
