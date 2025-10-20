@@ -9,7 +9,8 @@ window.onscroll = function() {
 };
 
 function scrollFunction() {
-    if (backToTopButton) { // Check if the button exists on this page
+    // Check if the button exists and if the user has scrolled down
+    if (backToTopButton) { 
         if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
             backToTopButton.style.display = "block";
         } else {
