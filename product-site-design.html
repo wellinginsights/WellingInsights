@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essential Site Design & Branding - Welling Insights</title> 
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Styles for specialized boxes on this detail page */
+        .guarantee-box {
+            background-color: var(--dark-navy);
+            color: var(--white);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 30px 0;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        .guarantee-box span {
+            color: var(--accent-blue);
+        }
+        /* Style for the two-column layout */
+        .product-detail-layout {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: flex-start;
+        }
+        .cta-sidebar {
+            flex: 1 1 300px;
+            padding: 20px;
+            border: 1px solid var(--primary-blue);
+            border-radius: 8px;
+            background-color: #f0f8ff;
+            text-align: center;
+        }
+        .content-area {
+            flex: 2 1 450px;
+        }
+        .cta-button {
+            display: block;
+            background-color: var(--accent-blue);
+            color: var(--white);
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+        .feature-list li {
+            margin-bottom: 15px; 
+            list-style: none;
+            padding-left: 30px;
+            position: relative;
+        }
+        .feature-list li::before {
+            content: "✨"; 
+            position: absolute;
+            left: 0;
+            font-size: 1.1em;
+        }
+        .requirement-box {
+            border: 1px dashed var(--primary-blue);
+            padding: 15px;
+            margin-top: 20px;
+            background-color: #fff;
+            border-radius: 4px;
+        }
+
+        /* Responsive adjustment for mobile */
+        @media (max-width: 768px) {
+            .product-detail-layout {
+                gap: 20px;
+            }
+            .cta-sidebar, .content-area {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="site-logo">
+            <img src="images/wellinginsightslogo.jpg" alt="Welling Insights Logo">
+        </a>
+        <button class="menu-toggle" aria-label="Toggle navigation menu" id="menu-toggle">&#9776;</button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Services (Home)</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="about.html">About Me</a></li>
+        </ul>
+    </nav>
+    
+    <main class="container">
+        
+        <div style="max-width: 900px; margin: 0 auto; padding: 20px;">
+            <p style="text-align: center; margin-bottom: 20px;"><a href="products.html#web-packages" style="color: var(--accent-blue); text-decoration: none;">&larr; Back to Web Packages</a></p>
+            
+            <h1 style="color: var(--primary-blue); text-align: center; font-size: 2.5em;">Essential Site Design & Branding</h1>
+            <p style="text-align: center; font-size: 1.2em; color: var(--dark-navy);">Your brand's foundation: Structured design blueprints that guarantee a professional, conversion-focused website.</p>
+
+            <hr style="margin: 30px 0;">
+
+            <div class="product-detail-layout">
+                
+                <div class="cta-sidebar">
+                    <div style="font-size: 1.5em; font-weight: bold; color: var(--dark-navy); margin-bottom: 10px;">One-Time Investment</div>
+                    <div style="font-size: 3em; font-weight: bold; color: var(--primary-blue); margin-bottom: 20px;">$450.00</div>
+                    
+                    <a href="https://buy.stripe.com/dRm6oH3A3cfk5st4W15AQ02" target="_blank" class="cta-button">
+                        Purchase Design Package &rarr;
+                    </a>
+                    
+                    <div class="requirement-box">
+                        <p style="font-size: 0.9em; font-weight: bold; color: var(--dark-navy); margin: 0;">Client Must Provide:</p>
+                        <ul style="list-style-type: disc; text-align: left; margin-left: 20px; font-size: 0.85em;">
+                            <li>Purchased Domain</li>
+                            <li>Access to Website Builder/Hosting</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="content-area">
+                    <h2 style="color: var(--primary-blue);">What This Package Delivers</h2>
+                    <p>Many websites look visually appealing but fail because the design doesn't serve the business strategy. This service ensures your visual aesthetic, layout, and user flow are strategically planned and optimized for **conversions** and **security** *before* any major development begins. This is your critical pre-development blueprint.</p>
+
+                    <h2 style="color: var(--primary-blue); margin-top: 40px;">Key Features & Deliverables</h2>
+                    <ul class="feature-list">
+                        <li>
+                            <strong>Visual Strategy Blueprint:</strong> Define core colors, typography, and mood boards. We establish a clear, professional brand identity that resonates with your target client.
+                        </li>
+                        <li>
+                            <strong>Wireframe & Layout Planning:</strong> Receive a detailed layout map of 4-5 key pages (Home, About, Contact, Services), ensuring every element is positioned for maximum impact and smooth user navigation.
+                        </li>
+                        <li>
+                            <strong>Builder/CMS Theme Configuration:</strong> Initial setup of your chosen website builder (e.g., Squarespace, Webflow, WordPress) with the selected theme, customized CSS/style rules, and the final navigation framework applied, ready for content population.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr style="margin: 50px 0;">
+
+            <section>
+                <h2 style="text-align: center; color: var(--primary-blue);">Why Strategic Design Matters 💡</h2>
+                <div class="process-grid">
+                    <div class="process-step">
+                        <h3>Save Development Time</h3>
+                        <p>A finalized design blueprint eliminates mid-project changes and rework, keeping your build on schedule and budget (**Project Management** benefit).</p>
+                    </div>
+                    <div class="process-step">
+                        <h3>Ensure Business Alignment</h3>
+                        <p>The design focuses on key conversion paths (e.g., 'Book Call,' 'View Products'), ensuring the site actively supports your revenue goals (**Business Strategy** benefit).</p>
+                    </div>
+                    <div class="process-step">
+                        <h3>Optimize User Trust</h3>
+                        <p>A professional, consistent design reduces user anxiety and builds credibility, which is essential for a Cybersecurity/Tech brand (**Branding** benefit).</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+    </main>
+    
+    <footer>
+        <p>
+            <img src="images/wellinginsightslogo.jpg" alt="Welling Insights Logo" class="footer-logo"> 
+            &copy; 2025 Welling Insights. All Rights Reserved. | 
+            <a href="contact.html" style="color: var(--accent-blue);">Contact Us</a>
+        </p>
+    </footer>
+
+    <button onclick="topFunction()" id="back-to-top" title="Go to top">&#9650;</button> 
+
+    <script src="script.js"></script>
+</body>
+</html>
