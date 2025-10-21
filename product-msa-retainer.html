@@ -45,6 +45,7 @@
             font-weight: bold;
             transition: background-color 0.3s;
         }
+        /* Styles for Process and Who Is This For */
         .process-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -72,6 +73,12 @@
             border-radius: 4px;
             margin-bottom: 15px;
         }
+        .for-list li {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+            list-style: none;
+        }
     </style>
 </head>
 <body>
@@ -96,7 +103,7 @@
             <p style="text-align: center; margin-bottom: 20px;"><a href="products.html" style="color: var(--accent-blue); text-decoration: none;">&larr; Back to All Products</a></p>
             
             <h1 style="color: var(--primary-blue); text-align: center; font-size: 2.5em;">Managed Security Assurance (MSA) Retainer</h1>
-            <p style="text-align: center; font-size: 1.2em; color: var(--dark-navy);">Proactive, predictable, monthly support to maintain a strong security posture.</p>
+            <p style="text-align: center; font-size: 1.2em; color: var(--dark-navy);">The predictable, monthly retainer for **proactive cybersecurity oversight** without the cost of a full-time employee.</p>
 
             <div class="guarantee-box">
                 🛡️ **Your Proactive Defense:** Stop reacting to threats. This retainer guarantees continuous review and guidance to keep your foundational security current.
@@ -112,7 +119,7 @@
                     <div class="pricing-grid">
                         <div class="pricing-tier" style="border-color: var(--accent-blue);">
                             <h3 style="color: var(--primary-blue); margin-top: 0;">MSA Basic</h3>
-                            <p>Ideal for initial compliance and external monitoring.</p>
+                            <p>Initial compliance & external monitoring.</p>
                             <div class="tier-price" style="color: var(--accent-blue);">$99/mo</div>
                             
                             <a href="https://buy.stripe.com/28E7sL7Qj7Z4cUV1JP5AQ00" target="_blank" class="tier-cta" style="background-color: var(--primary-blue); color: var(--white);">
@@ -122,7 +129,7 @@
 
                         <div class="pricing-tier" style="border-color: var(--primary-blue); background-color: var(--f7f7f7);">
                             <h3 style="color: var(--primary-blue); margin-top: 0;">MSA Complete</h3>
-                            <p>Includes deeper internal project oversight and advisory hours.</p>
+                            <p>Deeper internal oversight & project advisory hours.</p>
                             <div class="tier-price" style="color: var(--primary-blue);">$299/mo</div>
                             
                             <a href="https://buy.stripe.com/dRm4gz7Qja7caMN7495AQ01" target="_blank" class="tier-cta" style="background-color: var(--accent-blue); color: var(--dark-navy);">
@@ -134,24 +141,66 @@
                 </div>
                 
                 <div style="flex: 2 1 450px;">
-                    <h2 style="color: var(--primary-blue);">What This Product Solves</h2>
-                    <p>This retainer closes the continuous security gap often faced by SMBs, offering **proactive risk mitigation** by ensuring your foundational security elements (access controls, patching, monitoring) are reviewed and updated regularly. This prevents costly incidents before they happen.</p>
+                    <h2 style="color: var(--primary-blue);">What This Retainer Solves</h2>
+                    <p>This retainer closes the continuous security gap often faced by growing businesses. It provides **proactive risk mitigation** by ensuring your foundational security elements (access controls, patching, monitoring) are reviewed and updated regularly, preventing costly incidents before they happen.</p>
 
-                    <h2 style="color: var(--primary-blue); margin-top: 40px;">Key Features & Deliverables (Included in both tiers)</h2>
-                    <ul style="list-style-type: none; padding-left: 0;">
-                        <li style="margin-bottom: 15px; background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="%23044973" d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>') no-repeat left 5px; background-size: 18px; padding-left: 30px;">
-                            <strong>Monthly Vulnerability Scan Summary:</strong> A simple, actionable report identifying critical issues on external systems.
-                        </li>
-                        <li style="margin-bottom: 15px; background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="%23044973" d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>') no-repeat left 5px; background-size: 18px; padding-left: 30px;">
-                            <strong>Quarterly Access Control Review:</strong> Structured audit of user accounts to enforce the principle of **least privilege**.
-                        </li>
-                        <li style="margin-bottom: 15px; background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="%23044973" d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>') no-repeat left 5px; background-size: 18px; padding-left: 30px;">
-                            <strong>Critical Patch Management Alerts:</strong> Timely, prioritized guidance on *what* software needs patching *when* to avoid common exploits.
-                        </li>
-                    </ul>
+                    <h2 style="color: var(--primary-blue); margin-top: 40px;">Key Deliverables & Accountability</h2>
+                    <div class="value-feature">
+                        **1. Monthly Vulnerability Scan Summary** 📝 <br> A simple, actionable report identifying critical issues on your external systems.
+                    </div>
+                    <div class="value-feature">
+                        **2. Quarterly Access Control Review** 🔑 <br> Structured audit of user accounts to enforce the principle of **least privilege**, reducing insider threats.
+                    </div>
+                    <div class="value-feature">
+                        **3. Critical Patch Management Alerts** ⚙️ <br> Timely, prioritized guidance on *what* software needs patching *when* to avoid common exploits.
+                    </div>
                 </div>
             </section>
 
+            <hr style="margin: 50px 0;">
+
+            <section>
+                <h2 style="text-align: center; color: var(--primary-blue);">Who Is This Service For? 🎯</h2>
+                <p style="text-align: center; max-width: 700px; margin: 0 auto 30px;">This retainer is designed for leaders who understand that security is continuous, but lack the internal resources to manage it.</p>
+                
+                <ul class="for-list" style="display: flex; flex-wrap: wrap; justify-content: center; max-width: 800px; margin: 0 auto;">
+                    <li style="flex: 1 1 45%; margin-bottom: 20px;">
+                        <span style="color: var(--accent-blue); font-size: 1.2em; margin-right: 10px;">&#x2713;</span> **The Growing SMB** that relies heavily on digital tools but cannot afford a full-time Chief Security Officer (CSO).
+                    </li>
+                    <li style="flex: 1 1 45%; margin-bottom: 20px;">
+                        <span style="color: var(--accent-blue); font-size: 1.2em; margin-right: 10px;">&#x2713;</span> **The Non-Technical Founder** who needs clear, non-jargon reports to ensure vendor and employee accountability.
+                    </li>
+                    <li style="flex: 1 1 45%; margin-bottom: 20px;">
+                        <span style="color: var(--accent-blue); font-size: 1.2em; margin-right: 10px;">&#x2713;</span> **The Small IT Team** that is overloaded with day-to-day operations and needs expert bandwidth for proactive compliance and patching oversight.
+                    </li>
+                    <li style="flex: 1 1 45%; margin-bottom: 20px;">
+                        <span style="color: var(--accent-blue); font-size: 1.2em; margin-right: 10px;">&#x2713;</span> **Businesses Seeking Compliance** that require formalized, auditable documentation proving they are actively monitoring and reviewing access rights.
+                    </li>
+                </ul>
+            </section>
+
+            <hr style="margin: 50px 0;">
+
+            <section>
+                <h2 style="text-align: center; color: var(--primary-blue);">Use Case Scenarios 💡</h2>
+                <p style="text-align: center; max-width: 700px; margin: 0 auto 30px;">See how the MSA Retainer protects your business in real-world situations:</p>
+
+                <div class="process-grid">
+                    <div class="process-step">
+                        <h3>Scenario A: The Forgotten Employee</h3>
+                        <p>A former employee's account was missed during off-boarding. Our **Quarterly Access Review** flags the dormant account, allowing you to revoke access before it can be exploited by an attacker.</p>
+                    </div>
+                    <div class="process-step">
+                        <h3>Scenario B: The Critical Software Flaw</h3>
+                        <p>A major vulnerability is discovered in your server software. Our **Patch Management Alerts** provide a clear, prioritized instruction on the update required, preventing the flaw from being used against you.</p>
+                    </div>
+                    <div class="process-step">
+                        <h3>Scenario C: External Visibility</h3>
+                        <p>Your team launches a new client portal but forgets to close a specific port. The **Monthly Vulnerability Scan** catches the exposed entry point, allowing you to secure the system before it becomes a risk.</p>
+                    </div>
+                </div>
+            </section>
+            
             <hr style="margin: 50px 0;">
 
             <h2 style="text-align: center; color: var(--primary-blue);">Our Security Assurance Process</h2>
