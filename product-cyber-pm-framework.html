@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Project Management Framework - Welling Insights</title> 
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .guarantee-box {
+            background-color: var(--dark-navy);
+            color: var(--white);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 30px 0;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        .guarantee-box span {
+            color: var(--accent-blue);
+        }
+        /* Style for the two-column layout */
+        .product-detail-layout {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: flex-start;
+        }
+        .cta-sidebar {
+            flex: 1 1 300px;
+            padding: 20px;
+            border: 1px solid var(--primary-blue);
+            border-radius: 8px;
+            background-color: #f0f8ff;
+            text-align: center;
+        }
+        .content-area {
+            flex: 2 1 450px;
+        }
+        .cta-button {
+            display: block;
+            background-color: var(--accent-blue);
+            color: var(--white);
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+        .feature-list li {
+            margin-bottom: 15px; 
+            list-style: none;
+            padding-left: 30px;
+            position: relative;
+            font-weight: 500;
+        }
+        .feature-list li::before {
+            content: "✅"; /* Checkmark icon for deliverables */
+            position: absolute;
+            left: 0;
+            font-size: 1.1em;
+        }
+        /* FAQ Styles */
+        .faq-item {
+            margin-bottom: 25px;
+            border-left: 4px solid var(--primary-blue);
+            padding-left: 15px;
+        }
+        .faq-question {
+            font-weight: bold;
+            color: var(--dark-navy);
+            margin-bottom: 5px;
+        }
+        /* Use Case Styles */
+        .use-case-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+            text-align: left;
+        }
+        .use-case-item {
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            background-color: #fff;
+        }
+        .use-case-item h4 {
+            color: var(--primary-blue);
+            margin-top: 0;
+            border-bottom: 1px solid var(--accent-blue);
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="site-logo">
+            <img src="images/wellinginsightslogo.jpg" alt="Welling Insights Logo">
+        </a>
+        <button class="menu-toggle" aria-label="Toggle navigation menu" id="menu-toggle">&#9776;</button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Services (Home)</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="about.html">About Me</a></li>
+        </ul>
+    </nav>
+    
+    <main class="container">
+        
+        <div style="max-width: 900px; margin: 0 auto; padding: 20px;">
+            <p style="text-align: center; margin-bottom: 20px;"><a href="products.html" style="color: var(--accent-blue); text-decoration: none;">&larr; Back to All Products</a></p>
+            
+            <h1 style="color: var(--primary-blue); text-align: center; font-size: 2.5em;">Cyber Project Management Framework</h1>
+            <p style="text-align: center; font-size: 1.2em; color: var(--dark-navy);">The structured, phase-based template for successfully planning and executing any major security implementation.</p>
+
+            <div class="guarantee-box">
+                🎯 **Stop Project Drift:** This framework ensures security projects stay on budget, on time, and meet compliance goals using proven PM methodology.
+            </div>
+
+            <hr style="margin: 30px 0;">
+
+            <section class="product-detail-layout">
+                
+                <div class="cta-sidebar">
+                    <div style="font-size: 1.5em; font-weight: bold; color: var(--dark-navy); margin-bottom: 10px;">One-Time Investment</div>
+                    <div style="font-size: 3em; font-weight: bold; color: var(--primary-blue); margin-bottom: 20px;">$79.00</div>
+                    
+                    <a href="https://buy.stripe.com/8x228r9YrgvA2gh88d5AQ05" target="_blank" class="cta-button">
+                        Download Now &rarr;
+                    </a>
+                    
+                    <div style="font-size: 0.9em; color: gray; margin-top: 15px;">Secure download of the full documentation package.</div>
+                </div>
+                
+                <div class="content-area">
+                    <h2 style="color: var(--primary-blue);">What This Framework Delivers</h2>
+                    <p>Cybersecurity initiatives often fail due to poor planning, scope creep, and a lack of clear communication between technical and management teams. This downloadable framework provides the necessary **Project Management structure** tailored specifically for IT security implementations, ensuring clear milestones, defined roles, and transparent risk management.</p>
+
+                    <h2 style="color: var(--primary-blue); margin-top: 40px;">Framework Phases & Components</h2>
+                    <ul class="feature-list">
+                        <li>
+                            <strong>Phase 1: Initiation & Scoping:</strong> Templates for defining the project scope, identifying stakeholders, and establishing measurable success metrics (KPIs).
+                        </li>
+                        <li>
+                            <strong>Phase 2: Planning & Design:</strong> Checklists and workflows for architectural review, resource allocation, budget approval, and detailed risk mapping.
+                        </li>
+                        <li>
+                            <strong>Phase 3: Execution & Deployment:</strong> Structured process for testing, deploying changes, and handling technical rollbacks with minimal business disruption.
+                        </li>
+                        <li>
+                            <strong>Phase 4: Closure & Handover:</strong> Checklists for final sign-off, internal documentation, and scheduling the first post-implementation audit.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            
+            <hr style="margin: 50px 0;">
+
+            <section>
+                <h2 style="text-align: center; color: var(--primary-blue);">Use Case Scenarios 💡</h2>
+                <p style="text-align: center; max-width: 800px; margin: 0 auto 30px;">See how the structured approach guides critical security projects:</p>
+
+                <div class="use-case-grid">
+                    <div class="use-case-item">
+                        <h4>Implementing Multi-Factor Authentication (MFA)</h4>
+                        <p>The framework provides a clear communication plan, stakeholder buy-in templates, and a phase-by-phase rollout schedule, ensuring high user adoption and zero service disruption.</p>
+                    </div>
+                    <div class="use-case-item">
+                        <h4>Migrating to a New Cloud Platform (AWS/Azure)</h4>
+                        <p>Use the risk mapping tools to identify security risks associated with the migration, ensuring compliance requirements are met *before* data is moved and preventing costly mid-migration security stops.</p>
+                    </div>
+                    <div class="use-case-item">
+                        <h4>Launching a New Web Application</h4>
+                        <p>The closure phase ensures that all security testing (like the Ethical Hacking service) is complete, documentation is finalized, and ownership is clearly transferred to the maintenance team.</p>
+                    </div>
+                </div>
+            </section>
+
+            <hr style="margin: 50px 0;">
+
+            <section>
+                <h2 style="text-align: center; color: var(--primary-blue);">Frequently Asked Questions (FAQ)</h2>
+                
+                <div class="faq-item">
+                    <p class="faq-question">Who is this framework intended for?</p>
+                    <p>This is perfect for IT Managers, small business owners overseeing technical projects, or project managers tasked with a security implementation (like HIPAA or CCPA compliance) who need a ready-made structure.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <p class="faq-question">What format is the framework delivered in?</p>
+                    <p>The framework is delivered as a comprehensive digital package (e.g., PDF guide and editable document templates) compatible with standard office software (Word, Google Docs, etc.).</p>
+                </div>
+                
+                <div class="faq-item">
+                    <p class="faq-question">Does this include technical implementation?</p>
+                    <p>No, this is a **strategic and planning tool** only. It tells you *how* and *when* to manage the project, but you still need your technical team (or Welling Insights consulting) to perform the actual coding and configuration tasks.</p>
+                </div>
+            </section>
+        </div>
+        
+    </main>
+    
+    <footer>
+        <p>
+            <img src="images/wellinginsightslogo.jpg" alt="Welling Insights Logo" class="footer-logo"> 
+            &copy; 2025 Welling Insights. All Rights Reserved. | 
+            <a href="contact.html" style="color: var(--accent-blue);">Contact Us</a>
+        </p>
+    </footer>
+
+    <button onclick="topFunction()" id="back-to-top" title="Go to top">&#9650;</button> 
+
+    <script src="script.js"></script>
+</body>
+</html>
