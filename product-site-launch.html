@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Spectrum Site Launch Package - Welling Insights</title> 
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Styles for specialized boxes on this detail page */
+        .guarantee-box {
+            background-color: var(--dark-navy);
+            color: var(--white);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 30px 0;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        .guarantee-box span {
+            color: var(--accent-blue);
+        }
+        /* Style for the two-column layout */
+        .product-detail-layout {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: flex-start;
+        }
+        .cta-sidebar {
+            flex: 1 1 300px;
+            padding: 20px;
+            border: 1px solid var(--primary-blue);
+            border-radius: 8px;
+            background-color: #f0f8ff;
+            text-align: center;
+        }
+        .content-area {
+            flex: 2 1 450px;
+        }
+        .cta-button {
+            display: block;
+            background-color: var(--accent-blue);
+            color: var(--white);
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+        .feature-list li {
+            margin-bottom: 15px; 
+            list-style: none;
+            padding-left: 30px;
+            position: relative;
+            font-weight: 500;
+        }
+        .feature-list li::before {
+            content: "🚀"; /* Rocket icon for launch */
+            position: absolute;
+            left: 0;
+            font-size: 1.1em;
+        }
+        .requirement-box {
+            border: 1px dashed var(--primary-blue);
+            padding: 15px;
+            margin-top: 20px;
+            background-color: #fff;
+            border-radius: 4px;
+        }
+        /* FAQ Styles */
+        .faq-item {
+            margin-bottom: 25px;
+            border-left: 4px solid var(--primary-blue);
+            padding-left: 15px;
+        }
+        .faq-question {
+            font-weight: bold;
+            color: var(--dark-navy);
+            margin-bottom: 5px;
+        }
+        /* Cross-Sell and Who is it For Styles */
+        .secondary-section {
+            background-color: #f7f7f7;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 50px;
+            border: 1px solid #ddd;
+        }
+        .secondary-section h2 {
+            color: var(--primary-blue);
+            margin-top: 0;
+        }
+        .cross-sell-links a {
+            display: inline-block;
+            background-color: var(--primary-blue);
+            color: var(--white);
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        /* Responsive adjustment for mobile */
+        @media (max-width: 768px) {
+            .product-detail-layout {
+                gap: 20px;
+            }
+            .cta-sidebar, .content-area {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="site-logo">
+            <img src="images/wellinginsightslogo.jpg" alt="Welling Insights Logo">
+        </a>
+        <button class="menu-toggle" aria-label="Toggle navigation menu" id="menu-toggle">&#9776;</button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Services (Home)</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="about.html">About Me</a></li>
+        </ul>
+    </nav>
+    
+    <main class="container">
+        
+        <div style="max-width: 900px; margin: 0 auto; padding: 20px;">
+            <p style="text-align: center; margin-bottom: 20px;"><a href="products.html#web-packages" style="color: var(--accent-blue); text-decoration: none;">&larr; Back to Web Packages</a></p>
+            
+            <h1 style="color: var(--primary-blue); text-align: center; font-size: 2.5em;">Full Spectrum Site Launch Package</h1>
+            <p style="text-align: center; font-size: 1.2em; color: var(--dark-navy);">The complete, done-for-you service: from initial strategy and design blueprint to final, secured, and optimized deployment.</p>
+
+            <hr style="margin: 30px 0;">
+
+            <div class="product-detail-layout">
+                
+                <div class="cta-sidebar">
+                    <div style="font-size: 1.5em; font-weight: bold; color: var(--dark-navy); margin-bottom: 10px;">Total Investment</div>
+                    <div style="font-size: 3em; font-weight: bold; color: var(--primary-blue); margin-bottom: 20px;">$999.00</div>
+                    
+                    <a href="https://buy.stripe.com/7sYeVdc6z6V05stewB5AQ04" target="_blank" class="cta-button">
+                        Launch My Site Now &rarr;
+                    </a>
+                    
+                    <div class="requirement-box">
+                        <p style="font-size: 0.9em; font-weight: bold; color: var(--dark-navy); margin: 0;">Client Must Provide (We manage the rest):</p>
+                        <ul style="list-style-type: disc; text-align: left; margin-left: 20px; font-size: 0.85em;">
+                            <li>Purchased Domain</li>
+                            <li>Access to Website Builder/Hosting</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="content-area">
+                    <h2 style="color: var(--primary-blue);">The Welling Insights Full Spectrum Advantage</h2>
+                    <p>This package removes all the guesswork and headache from launching a new website or performing a total brand revamp. We manage the entire lifecycle—from **strategic design** (ensuring brand fit) to **secure deployment** (optimizing speed and cybersecurity). Whatever the use case, Welling Insights has you covered.</p>
+
+                    <h2 style="color: var(--primary-blue); margin-top: 40px;">Key Features (Includes Both Packages)</h2>
+                    <ul class="feature-list">
+                        <li>
+                            <strong>Design Phase:</strong> Full Visual Strategy Blueprint, Wireframing, and CMS Theme Configuration (**Value of Essential Site Design**).
+                        </li>
+                        <li>
+                            <strong>Development Phase:</strong> Core Code Implementation, Performance Optimization, and Essential Security Hardening (**Value of Core Code Build-Out**).
+                        </li>
+                        <li>
+                            <strong>Project Management:</strong> Single point of contact, structured timelines, and milestone reporting to ensure on-time delivery.
+                        </li>
+                        <li>
+                            <strong>Final Deployment:</strong> Handled by our team, guaranteeing zero downtime and correct DNS linking to your professional domain.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr style="margin: 50px 0;">
+
+            <section class="secondary-section">
+                <h2 style="text-align: center;">Who Is This Service Perfect For? 🌟</h2>
+                <p style="max-width: 700px; margin: 0 auto 30px;">This package is designed for clients who value their time and need a professional, reliable outcome without managing multiple vendors or technical steps.</p>
+                
+                <ul style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; text-align: left; max-width: 700px; margin: 0 auto;">
+                    <li style="flex: 1 1 45%; margin: 10px;">✅ **The New Entrepreneur:** Launching a business and needs to ensure the online presence is professional and secure from Day One.</li>
+                    <li style="flex: 1 1 45%; margin: 10px;">✅ **The Redesigner:** Has an outdated site/brand that needs a complete technical and visual overhaul, handled by one expert team.</li>
+                    <li style="flex: 1 1 45%; margin: 10px;">✅ **The Time-Stressed Leader:** Wants a high-quality result but needs a hands-off, project-managed process.</li>
+                </ul>
+            </section>
+
+            <hr style="margin: 50px 0;">
+
+            <section>
+                <h2 style="text-align: center; color: var(--primary-blue);">Frequently Asked Questions (FAQ)</h2>
+                
+                <div class="faq-item">
+                    <p class="faq-question">How is this different from your other packages?</p>
+                    <p>This is the combined, discounted service. It covers the **Design Blueprint** ($450 value) and the **Core Development** ($650 value), plus the added benefit of unified project management, saving you money and coordination time.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <p class="faq-question">Do I need to hire a separate designer or coder?</p>
+                    <p>No. This is a comprehensive solution. Welling Insights handles the aesthetic planning, the technical coding, optimization, and final deployment. You just provide the vision and access to your hosting.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <p class="faq-question">What is the expected timeline?</p>
+                    <p>The timeline varies based on complexity, but because the steps are integrated and managed by one person, we provide a faster, more predictable delivery than coordinating two separate providers.</p>
+                </div>
+            </section>
+
+            <hr style="margin: 50px 0;">
+
+            <div class="secondary-section">
+                <h2 style="color: var(--primary-blue);">Only Need Part of the Service?</h2>
+                <p>If your needs are more focused, select one of our standalone packages:</p>
+
+                <div class="cross-sell-links">
+                    <a href="product-site-design.html" style="background-color: var(--primary-blue);">
+                        Need Design/Branding Only
+                    </a>
+                    
+                    <a href="product-site-development.html" style="background-color: var(--dark-navy);">
+                        Need Code/Optimization Only
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    
+    <footer>
+        <p>
+            <img src="images/wellinginsightslogo.jpg" alt="Welling Insights Logo" class="footer-logo"> 
+            &copy; 2025 Welling Insights. All Rights Reserved. | 
+            <a href="contact.html" style="color: var(--accent-blue);">Contact Us</a>
+        </p>
+    </footer>
+
+    <button onclick="topFunction()" id="back-to-top" title="Go to top">&#9650;</button> 
+
+    <script src="script.js"></script>
+</body>
+</html>
