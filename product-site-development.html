@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Core Code & Deployment Build-Out - Welling Insights</title> 
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Styles for specialized boxes on this detail page */
+        .guarantee-box {
+            background-color: var(--dark-navy);
+            color: var(--white);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 30px 0;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        .guarantee-box span {
+            color: var(--accent-blue);
+        }
+        /* Style for the two-column layout */
+        .product-detail-layout {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: flex-start;
+        }
+        .cta-sidebar {
+            flex: 1 1 300px;
+            padding: 20px;
+            border: 1px solid var(--primary-blue);
+            border-radius: 8px;
+            background-color: #f0f8ff;
+            text-align: center;
+        }
+        .content-area {
+            flex: 2 1 450px;
+        }
+        .cta-button {
+            display: block;
+            background-color: var(--accent-blue);
+            color: var(--white);
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+        .feature-list li {
+            margin-bottom: 15px; 
+            list-style: none;
+            padding-left: 30px;
+            position: relative;
+        }
+        .feature-list li::before {
+            content: "💻"; /* Code/laptop icon for development */
+            position: absolute;
+            left: 0;
+            font-size: 1.1em;
+        }
+        .requirement-box {
+            border: 1px dashed var(--primary-blue);
+            padding: 15px;
+            margin-top: 20px;
+            background-color: #fff;
+            border-radius: 4px;
+        }
+        /* FAQ Styles */
+        .faq-item {
+            margin-bottom: 25px;
+            border-left: 4px solid var(--accent-blue);
+            padding-left: 15px;
+        }
+        .faq-question {
+            font-weight: bold;
+            color: var(--dark-navy);
+            margin-bottom: 5px;
+        }
+        /* Cross-Sell Styles */
+        .cross-sell-section {
+            background-color: #f7f7f7;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 50px;
+            border: 1px solid #ddd;
+        }
+        .cross-sell-section a {
+            display: inline-block;
+            background-color: var(--primary-blue);
+            color: var(--white);
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            margin: 10px;
+        }
+        /* Responsive adjustment for mobile */
+        @media (max-width: 768px) {
+            .product-detail-layout {
+                gap: 20px;
+            }
+            .cta-sidebar, .content-area {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="site-logo">
+            <img src="images/wellinginsightslogo.jpg" alt="Welling Insights Logo">
+        </a>
+        <button class="menu-toggle" aria-label="Toggle navigation menu" id="menu-toggle">&#9776;</button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Services (Home)</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="about.html">About Me</a></li>
+        </ul>
+    </nav>
+    
+    <main class="container">
+        
+        <div style="max-width: 900px; margin: 0 auto; padding: 20px;">
+            <p style="text-align: center; margin-bottom: 20px;"><a href="products.html#web-packages" style="color: var(--accent-blue); text-decoration: none;">&larr; Back to Web Packages</a></p>
+            
+            <h1 style="color: var(--primary-blue); text-align: center; font-size: 2.5em;">Core Code & Deployment Build-Out</h1>
+            <p style="text-align: center; font-size: 1.2em; color: var(--dark-navy);">The technical heavy lifting: Expert development, optimization, integration, and security hardening for your existing website.</p>
+
+            <hr style="margin: 30px 0;">
+
+            <div class="product-detail-layout">
+                
+                <div class="cta-sidebar">
+                    <div style="font-size: 1.5em; font-weight: bold; color: var(--dark-navy); margin-bottom: 10px;">One-Time Investment</div>
+                    <div style="font-size: 3em; font-weight: bold; color: var(--primary-blue); margin-bottom: 20px;">$650.00</div>
+                    
+                    <a href="[YOUR_CORE_DEV_STRIPE_URL_HERE]" target="_blank" class="cta-button">
+                        Start Development Project &rarr;
+                    </a>
+                    
+                    <div class="requirement-box">
+                        <p style="font-size: 0.9em; font-weight: bold; color: var(--dark-navy); margin: 0;">Client Must Provide:</p>
+                        <ul style="list-style-type: disc; text-align: left; margin-left: 20px; font-size: 0.85em;">
+                            <li>Established Domain & Hosting</li>
+                            <li>Finalized Design/Layout (Ready to code)</li>
+                            <li>Credentials to CMS/Hosting</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="content-area">
+                    <h2 style="color: var(--primary-blue);">What This Package Delivers</h2>
+                    <p>This service is designed for sites where the **design is complete**, but the technical execution—speed, security, and complex integrations—needs expert attention. We take the blueprint and handle the heavy lifting, ensuring your site is not just built, but **optimized for performance** and **hardened against cyber threats** (leveraging your deep cybersecurity knowledge).</p>
+
+                    <h2 style="color: var(--primary-blue); margin-top: 40px;">Key Features & Deliverables</h2>
+                    <ul class="feature-list">
+                        <li>
+                            <strong>Core Code Implementation:</strong> Translating the approved design files into clean, semantic HTML, CSS, and necessary JavaScript functionality within your chosen CMS/builder.
+                        </li>
+                        <li>
+                            <strong>Performance Optimization (Speed):</strong> Minifying assets, configuring caching, and optimizing image delivery to ensure top-tier loading speeds and Google Core Web Vitals scores.
+                        </li>
+                        <li>
+                            <strong>Essential Security Hardening:</strong> Implementation of critical measures like secure header configurations, robust access controls, and best-practice file permissions to minimize attack vectors.
+                        </li>
+                        <li>
+                            <strong>Custom Integration Setup:</strong> Connecting third-party services (e.g., analytics, marketing automation, simple APIs) to your site using reliable, secure code.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr style="margin: 50px 0;">
+
+            <section>
+                <h2 style="text-align: center; color: var(--primary-blue);">Frequently Asked Questions (FAQ)</h2>
+                
+                <div class="faq-item">
+                    <p class="faq-question">Who is this service ideal for?</p>
+                    <p>This is for clients who have their visual branding **already finalized** (either by a designer or through our *Essential Site Design* package) and need a reliable coding expert to handle the complex build, performance tuning, and security setup.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <p class="faq-question">Will this cover the entire website build?</p>
+                    <p>Yes, but it strictly focuses on the **technical execution**. The scope includes all coding, optimization, and security setup. If you need assistance with **planning the design layout** first, please look at our *Essential Site Design* package.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <p class="faq-question">What is included in "Security Hardening"?</p>
+                    <p>We ensure basic file/folder permissions are correct, set up security headers (like Content Security Policy), and integrate light-weight monitoring tools to block common web exploits. This uses best practices from your dedicated cybersecurity expertise.</p>
+                </div>
+            </section>
+
+            <hr style="margin: 50px 0;">
+
+            <div class="cross-sell-section">
+                <h2 style="color: var(--primary-blue); margin-top: 0;">Not Sure Which Package is Right?</h2>
+                <p>We have a service for every stage of your website journey:</p>
+
+                <div style="margin-top: 20px;">
+                    <a href="product-site-design.html" style="background-color: var(--primary-blue);">
+                        Need Design Only?
+                    </a>
+                    
+                    <a href="product-site-launch.html" style="background-color: var(--dark-navy);">
+                        Need Start-to-Finish Management?
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    
+    <footer>
+        <p>
+            <img src="images/wellinginsightslogo.jpg" alt="Welling Insights Logo" class="footer-logo"> 
+            &copy; 2025 Welling Insights. All Rights Reserved. | 
+            <a href="contact.html" style="color: var(--accent-blue);">Contact Us</a>
+        </p>
+    </footer>
+
+    <button onclick="topFunction()" id="back-to-top" title="Go to top">&#9650;</button> 
+
+    <script src="script.js"></script>
+</body>
+</html>
