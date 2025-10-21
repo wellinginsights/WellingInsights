@@ -19,12 +19,94 @@
         .guarantee-box span {
             color: var(--accent-blue);
         }
+        /* Style for the two-column layout */
+        .product-detail-layout {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: flex-start;
+        }
+        .cta-sidebar {
+            flex: 1 1 300px;
+            padding: 20px;
+            border: 1px solid var(--primary-blue);
+            border-radius: 8px;
+            background-color: #f0f8ff;
+            text-align: center;
+        }
+        .content-area {
+            flex: 2 1 450px;
+        }
+        .cta-button {
+            display: block;
+            background-color: var(--accent-blue);
+            color: var(--white);
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+        .feature-list li {
+            margin-bottom: 15px; 
+            list-style: none;
+            padding-left: 30px;
+            position: relative;
+            font-weight: 500;
+        }
+        .feature-list li::before {
+            content: "🔎"; /* Inspection icon */
+            position: absolute;
+            left: 0;
+            font-size: 1.1em;
+        }
+        .service-list li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            list-style: none;
+            position: relative;
+        }
+        .service-list li::before {
+            content: "✅"; 
+            position: absolute;
+            left: 0;
+            font-size: 1.1em;
+        }
+        .use-case-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+            text-align: left;
+        }
+        .use-case-item {
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            background-color: #fff;
+        }
+        .use-case-item h4 {
+            color: var(--primary-blue);
+            margin-top: 0;
+            border-bottom: 1px solid var(--accent-blue);
+            padding-bottom: 5px;
+        }
+        /* New section styles */
+        .secondary-heading {
+            color: var(--primary-blue);
+            text-align: center;
+            margin-top: 60px;
+            margin-bottom: 30px;
+        }
     </style>
 </head>
 <body>
 
     <nav class="navbar">
-        <a href="index.html" class="site-title">Welling Insights</a>
+        <a href="index.html" class="site-logo">
+            <img src="images/wellinginsightslogo.jpg" alt="Welling Insights Logo">
+        </a>
         <button class="menu-toggle" aria-label="Toggle navigation menu" id="menu-toggle">&#9776;</button>
         <ul class="nav-links" id="nav-links">
             <li><a href="index.html">Services (Home)</a></li>
@@ -38,7 +120,7 @@
     <main class="container">
         
         <div style="max-width: 900px; margin: 0 auto; padding: 20px;">
-            <p style="text-align: center; margin-bottom: 20px;"><a href="products.html" style="color: var(--accent-blue); text-decoration: none;">&larr; Back to All Products</a></p>
+            <p style="text-align: center; margin-bottom: 20px;"><a href="products.html#ethical-hacking" style="color: var(--accent-blue); text-decoration: none;">&larr; Back to Hourly Projects</a></p>
             
             <h1 style="color: var(--primary-blue); text-align: center; font-size: 2.5em;">Ethical Hacking & Penetration Testing</h1>
             <p style="text-align: center; font-size: 1.2em; color: var(--dark-navy);">Proactively identify and fix exploitable vulnerabilities before attackers find them.</p>
@@ -49,42 +131,92 @@
 
             <hr style="margin: 30px 0;">
 
-            <section style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;">
+            <section class="product-detail-layout">
                 
-                <div style="flex: 1 1 300px; padding: 20px; border: 1px solid var(--primary-blue); border-radius: 8px; background-color: #f0f8ff; text-align: center;">
+                <div class="cta-sidebar">
                     <div style="font-size: 1.5em; font-weight: bold; color: var(--dark-navy); margin-bottom: 10px;">Project Rate</div>
                     <div style="font-size: 3em; font-weight: bold; color: var(--primary-blue); margin-bottom: 20px;">$50/hr</div>
                     
-                    <a href="contact.html" style="display: block; background-color: var(--accent-blue); color: var(--white); padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 1.1em; transition: background-color 0.3s;">
+                    <a href="contact.html" class="cta-button">
                         Request a Free Quote &rarr;
                     </a>
                     <p style="font-size: 0.9em; color: gray; margin-top: 15px;">Project hours and total cost will be determined during the scoping call.</p>
                 </div>
                 
-                <div style="flex: 2 1 450px;">
+                <div class="content-area">
                     <h2 style="color: var(--primary-blue);">What This Service Solves</h2>
                     <p>Instead of waiting for a security breach, Welling Insights legally simulates real-world attacks. This service provides a prioritized action plan that addresses security gaps, ensuring your critical assets (websites, servers, databases) are protected against known vulnerabilities and sophisticated attackers.</p>
 
                     <h2 style="color: var(--primary-blue); margin-top: 40px;">Key Phases & Deliverables</h2>
-                    <ul style="list-style-type: none; padding-left: 0;">
-                        <li style="margin-bottom: 15px; background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="%23044973" d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>') no-repeat left 5px; background-size: 18px; padding-left: 30px;">
+                    <ul class="feature-list">
+                        <li>
                             <strong>Phase 1: Reconnaissance & Discovery:</strong> Comprehensive information gathering and target mapping, defining the exact scope of the ethical hack.
                         </li>
-                        <li style="margin-bottom: 15px; background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="%23044973" d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>') no-repeat left 5px; background-size: 18px; padding-left: 30px;">
+                        <li>
                             <strong>Phase 2: Exploit & Analysis:</strong> Active testing using industry-standard tools and techniques to breach security controls and gain access.
                         </li>
-                        <li style="margin-bottom: 15px; background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="%23044973" d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>') no-repeat left 5px; background-size: 18px; padding-left: 30px;">
+                        <li>
                             <strong>Phase 3: Comprehensive Report:</strong> A detailed, prioritized report outlining every discovered vulnerability, its risk level, and clear, actionable remediation steps.
                         </li>
                     </ul>
                 </div>
+            </section>
+            
+            <hr style="margin: 50px 0;">
+
+            <section>
+                <h2 class="secondary-heading">Legal Readiness & Forensic Value ⚖️</h2>
+                <p style="max-width: 800px; margin: 0 auto; text-align: center;">This testing is not just technical; it's performed with a forensic mindset, ensuring the results can be used for legal protection and compliance.</p>
+                
+                <ul class="service-list" style="max-width: 700px; margin: 30px auto;">
+                    <li style="font-weight: bold;">**Legal Defense Documentation:** The final report provides auditable, structured evidence of security due diligence. This can be sent to legal authorities or regulatory bodies as a means of defense, showing your commitment to protection.</li>
+                    <li style="font-weight: bold;">**Evidence Preservation Protocol:** Our process is non-destructive and follows digital evidence preservation best practices, making the test results admissible and reliable for future incident response planning.</li>
+                    <li style="font-weight: bold;">**Compliance Support:** Helps satisfy audit requirements for standards like HIPAA, GDPR, or CCPA by documenting active, ethical testing against exploitable vulnerabilities.</li>
+                </ul>
+            </section>
+
+            <hr style="margin: 50px 0;">
+
+            <section>
+                <h2 class="secondary-heading">Use Case Scenarios 💡</h2>
+                <p style="text-align: center; max-width: 800px; margin: 0 auto 30px;">See how this proactive testing prevents specific, costly business interruptions:</p>
+
+                <div class="use-case-grid">
+                    <div class="use-case-item">
+                        <h4>Web Application Logic Flaws</h4>
+                        <p>You run an online portal for clients. We find and demonstrate a flaw in the password reset logic that allows an attacker to bypass authentication without needing code (Social Engineering/Flaw Exploitation).</p>
+                    </div>
+                    <div class="use-case-item">
+                        <h4>Exposed Cloud Configuration</h4>
+                        <p>Your team recently migrated data to AWS/Azure. We discover an accidentally misconfigured bucket policy that exposes client files publicly, and we secure it immediately (Data Exposure Prevention).</p>
+                    </div>
+                    <div class="use-case-item">
+                        <h4>Internal Network Vulnerabilities</h4>
+                        <p>We test the internal network to see if an employee's compromised laptop could quickly lead to Domain Administrator access, revealing weaknesses in your internal segmentation and access controls (Lateral Movement Assessment).</p>
+                    </div>
+                </div>
+            </section>
+
+            <hr style="margin: 50px 0;">
+
+            <section>
+                <h2 class="secondary-heading">Who Is This Service For? 🎯</h2>
+                <ul class="service-list" style="max-width: 700px; margin: 0 auto;">
+                    <li style="font-weight: bold;">**Regulated Businesses:** Companies (e.g., finance, healthcare) needing auditable proof that they actively test their systems against current threats.</li>
+                    <li style="font-weight: bold;">**High-Visibility Projects:** Teams launching a new mobile app, web service, or API that cannot afford the reputational damage of a public vulnerability.</li>
+                    <li style="font-weight: bold;">**Startups Seeking Investment:** Companies that need an objective security assessment to satisfy due diligence requirements from potential investors or clients.</li>
+                </ul>
             </section>
         </div>
         
     </main>
     
     <footer>
-        <p>&copy; 2025 Welling Insights. All Rights Reserved. | <a href="contact.html" style="color: var(--accent-blue);">Contact Us</a></p>
+        <p>
+            <img src="images/wellinginsightslogo.jpg" alt="Welling Insights Logo" class="footer-logo"> 
+            &copy; 2025 Welling Insights. All Rights Reserved. | 
+            <a href="contact.html" style="color: var(--accent-blue);">Contact Us</a>
+        </p>
     </footer>
 
     <button onclick="topFunction()" id="back-to-top" title="Go to top">&#9650;</button> 
