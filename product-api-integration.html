@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure API Integration & System Sync - Welling Insights</title> 
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Styles for specialized boxes on this detail page */
+        .guarantee-box {
+            background-color: var(--dark-navy);
+            color: var(--white);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 30px 0;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        .guarantee-box span {
+            color: var(--accent-blue);
+        }
+        /* Style for the two-column layout */
+        .product-detail-layout {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: flex-start;
+        }
+        .cta-sidebar {
+            flex: 1 1 300px;
+            padding: 20px;
+            border: 1px solid var(--primary-blue);
+            border-radius: 8px;
+            background-color: #f0f8ff;
+            text-align: center;
+        }
+        .content-area {
+            flex: 2 1 450px;
+        }
+        .cta-button {
+            display: block;
+            background-color: var(--accent-blue);
+            color: var(--white);
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+        .feature-list li {
+            margin-bottom: 15px; 
+            list-style: none;
+            padding-left: 30px;
+            position: relative;
+            font-weight: 500;
+        }
+        .feature-list li::before {
+            content: "🔗"; /* Link icon for integration */
+            position: absolute;
+            left: 0;
+            font-size: 1.1em;
+        }
+        /* Security Features List Styles */
+        .security-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .security-list li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+            font-weight: bold;
+            color: var(--dark-navy);
+        }
+        .security-list li::before {
+            content: "🔒"; /* Lock icon for security */
+            position: absolute;
+            left: 0;
+            font-size: 1.1em;
+            color: var(--primary-blue);
+        }
+        /* Use Case Styles */
+        .use-case-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+            text-align: left;
+        }
+        .use-case-item {
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            background-color: #fff;
+        }
+        .use-case-item h4 {
+            color: var(--primary-blue);
+            margin-top: 0;
+            border-bottom: 1px solid var(--accent-blue);
+            padding-bottom: 5px;
+        }
+        /* FAQ Styles */
+        .faq-item {
+            margin-bottom: 25px;
+            border-left: 4px solid var(--primary-blue);
+            padding-left: 15px;
+        }
+        .faq-question {
+            font-weight: bold;
+            color: var(--dark-navy);
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="site-logo">
+            <img src="images/wellinginsightslogo.jpg" alt="Welling Insights Logo">
+        </a>
+        <button class="menu-toggle" aria-label="Toggle navigation menu" id="menu-toggle">&#9776;</button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Services (Home)</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="about.html">About Me</a></li>
+        </ul>
+    </nav>
+    
+    <main class="container">
+        
+        <div style="max-width: 900px; margin: 0 auto; padding: 20px;">
+            <p style="text-align: center; margin-bottom: 20px;"><a href="products.html#custom-code-packages" style="color: var(--accent-blue); text-decoration: none;">&larr; Back to Custom Solutions</a></p>
+            
+            <h1 style="color: var(--primary-blue); text-align: center; font-size: 2.5em;">Secure API Integration & System Sync</h1>
+            <p style="text-align: center; font-size: 1.2em; color: var(--dark-navy);">Connect two separate software platforms securely, ensuring real-time data consistency and reliability for critical business processes.</p>
+
+            <div class="guarantee-box">
+                **Base Price:** <span>Starts at $599.00</span> (Covers in-depth discovery, architecture design, and initial setup plan).<br>
+                **Transparent Scoping:** If complex integration requirements are found during the call, a transparent rate of <span>$50/hour</span> applies for additional scope. Base price covers the initial consultation and blueprint.
+            </div>
+
+            <hr style="margin: 30px 0;">
+
+            <section class="product-detail-layout">
+                
+                <div class="cta-sidebar">
+                    <div style="font-size: 1.5em; font-weight: bold; color: var(--dark-navy); margin-bottom: 10px;">Investment Starts At</div>
+                    <div style="font-size: 3em; font-weight: bold; color: var(--primary-blue); margin-bottom: 20px;">$599.00</div>
+                    
+                    <a href="https://buy.stripe.com/4gMfZh3A31AGaMNagl5AQ09" target="_blank" class="cta-button">
+                        Purchase Integration Blueprint &rarr;
+                    </a>
+                    
+                    <div style="font-size: 0.9em; color: gray; margin-top: 15px;">**Includes** link to schedule your in-depth discovery/scoping call after payment.</div>
+                </div>
+                
+                <div class="content-area">
+                    <h2 style="color: var(--primary-blue);">The Robust, Hands-On Approach to Data Sync</h2>
+                    <p>Unlike simple "no-code" sync tools that break under load, this service provides a **robust, custom-coded solution** that prioritizes data integrity and security. We don't just connect the apps; we manage the authentication, error handling, and security hardening necessary for reliable, long-term system performance. **This is a dedicated, hands-on development partnership.**</p>
+
+                    <h2 style="color: var(--primary-blue); margin-top: 40px;">Key Phases & Deliverables</h2>
+                    <ul class="feature-list">
+                        <li>
+                            <strong>Detailed Architecture Discovery:</strong> In-depth call to map authentication protocols, data fields, and sync timing requirements across both platforms.
+                        </li>
+                        <li>
+                            <strong>Custom Code Foundation:</strong> Development of secure, efficient API calls (using Python or JavaScript) that bypass the limitations of generic integration tools.
+                        </li>
+                        <li>
+                            <strong>Advanced Error Handling:</strong> Implementation of logging and automatic retry mechanisms to ensure data integrity even during network or API outages.
+                        </li>
+                        <li>
+                            <strong>Security Protocol Review:</strong> Focus on using secure tokens, encrypted data transmission (HTTPS/TLS), and restricted access keys to protect sensitive data during transit.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            
+            <hr style="margin: 50px 0;">
+
+            <section>
+                <h2 style="text-align: center; color: var(--primary-blue);">Why Security Is The Foundation 🔒</h2>
+                <p style="text-align: center; max-width: 800px; margin: 0 auto 30px;">Integrating systems is a major security risk. We eliminate vulnerability by focusing on secure protocols:</p>
+
+                <ul class="security-list" style="max-width: 700px; margin: 30px auto;">
+                    <li>**Token Management:** We ensure API keys and tokens are securely stored and rotated to prevent unauthorized access to linked accounts.</li>
+                    <li>**Validation Logic:** Rigorous code validation prevents SQL injection or malicious data from being passed between systems.</li>
+                    <li>**Auditable Logging:** Every data transfer and connection attempt is logged, providing a clear audit trail for compliance and troubleshooting.</li>
+                </ul>
+            </section>
+
+            <hr style="margin: 50px 0;">
+
+            <section>
+                <h2 style="text-align: center; color: var(--primary-blue);">Use Case Scenarios 💡</h2>
+                <p style="text-align: center; max-width: 800px; margin: 0 auto 30px;">Clients use this custom coding service for complex data synchronizations:</p>
+
+                <div class="use-case-grid">
+                    <div class="use-case-item">
+                        <h4>CRM to Accounting Sync</h4>
+                        <p>Securely sync sales data from Salesforce or HubSpot directly into QuickBooks or SAP, ensuring invoices are generated accurately and instantly upon deal closure.</p>
+                    </div>
+                    <div class="use-case-item">
+                        <h4>E-commerce Inventory Sync</h4>
+                        <p>Connect your custom warehouse inventory system (via API) directly to your Shopify or WooCommerce store, providing real-time stock levels and preventing overselling.</p>
+                    </div>
+                    <div class="use-case-item">
+                        <h4>Marketing Automation & Leads</h4>
+                        <p>Bridge a custom landing page form (that stores data in a SQL database) to a marketing automation platform, validating and sanitizing the lead data along the way.</p>
+                    </div>
+                </div>
+            </section>
+
+            <hr style="margin: 50px 0;">
+
+            <section>
+                <h2 style="text-align: center; color: var(--primary-blue);">Frequently Asked Questions (FAQ)</h2>
+                
+                <div class="faq-item">
+                    <p class="faq-question">What is included in the base $\$599.00$ price?</p>
+                    <p>The base price covers the **in-depth Discovery Call** and the final **Integration Architecture Document**. This delivers the complete, detailed plan you need, ready for the coding phase.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <p class="faq-question">Why is this priced higher than the Automation Blueprint?</p>
+                    <p>API Integration requires deeper technical expertise in authentication, security protocols, and failure handling across two distinct external systems, making the initial scoping and design phase more complex and specialized.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <p class="faq-question">Is the implementation included in the initial price?</p>
+                    <p>No. The initial price covers the **Blueprint and Architecture**. The implementation (writing the final integration code and deploying it) will be quoted as a fixed price after the discovery call, based on the $\$50/\text{hour}$ rate, and will require your final approval.</p>
+                </div>
+            </section>
+        </div>
+        
+    </main>
+    
+    <footer>
+        <p>
+            <img src="images/wellinginsightslogo.jpg" alt="Welling Insights Logo" class="footer-logo"> 
+            &copy; 2025 Welling Insights. All Rights Reserved. | 
+            <a href="contact.html" style="color: var(--accent-blue);">Contact Us</a>
+        </p>
+    </footer>
+
+    <button onclick="topFunction()" id="back-to-top" title="Go to top">&#9650;</button> 
+
+    <script src="script.js"></script>
+</body>
+</html>
