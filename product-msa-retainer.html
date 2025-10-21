@@ -6,16 +6,44 @@
     <title>Managed Security Assurance Retainer - Welling Insights</title> 
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* New Styles for the Retainer Detail Page */
         .guarantee-box {
-            background-color: var(--accent-blue);
-            color: var(--dark-navy);
+            background-color: var(--dark-navy);
+            color: var(--white);
             padding: 20px;
             border-radius: 8px;
             text-align: center;
             margin: 30px 0;
             font-size: 1.1em;
             font-weight: bold;
+        }
+        .guarantee-box span {
+            color: var(--accent-blue);
+        }
+        /* Styles for the two pricing tiers */
+        .pricing-grid {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .pricing-tier {
+            flex: 1;
+            padding: 25px 20px;
+            border: 2px solid var(--accent-blue);
+            border-radius: 8px;
+            text-align: center;
+        }
+        .tier-price {
+            font-size: 2.2em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .tier-cta {
+            display: block;
+            padding: 12px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s;
         }
         .process-grid {
             display: grid;
@@ -49,7 +77,9 @@
 <body>
 
     <nav class="navbar">
-        <a href="index.html" class="site-title">Welling Insights</a>
+        <a href="index.html" class="site-logo">
+            <img src="images/wellinginsightslogo.jpg" alt="Welling Insights Logo">
+        </a>
         <button class="menu-toggle" aria-label="Toggle navigation menu" id="menu-toggle">&#9776;</button>
         <ul class="nav-links" id="nav-links">
             <li><a href="index.html">Services (Home)</a></li>
@@ -66,7 +96,7 @@
             <p style="text-align: center; margin-bottom: 20px;"><a href="products.html" style="color: var(--accent-blue); text-decoration: none;">&larr; Back to All Products</a></p>
             
             <h1 style="color: var(--primary-blue); text-align: center; font-size: 2.5em;">Managed Security Assurance (MSA) Retainer</h1>
-            <p style="text-align: center; font-size: 1.2em; color: var(--dark-navy);">The predictable, monthly retainer for **proactive cybersecurity oversight** without the cost of a full-time employee.</p>
+            <p style="text-align: center; font-size: 1.2em; color: var(--dark-navy);">Proactive, predictable, monthly support to maintain a strong security posture.</p>
 
             <div class="guarantee-box">
                 🛡️ **Your Proactive Defense:** Stop reacting to threats. This retainer guarantees continuous review and guidance to keep your foundational security current.
@@ -76,31 +106,49 @@
 
             <section style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;">
                 
-                <div style="flex: 1 1 300px; padding: 20px; border: 1px solid var(--primary-blue); border-radius: 8px; background-color: #f0f8ff; text-align: center;">
-                    <div style="font-size: 1.5em; font-weight: bold; color: var(--dark-navy); margin-bottom: 10px;">Monthly Investment</div>
-                    <div style="font-size: 3em; font-weight: bold; color: var(--primary-blue); margin-bottom: 20px;">\$99 - \$299</div>
+                <div style="flex: 1 1 300px;">
+                    <h2 style="color: var(--primary-blue); text-align: center; margin-top: 0;">Choose Your Assurance Tier</h2>
                     
-                    <a href="[YOUR_MSA_STRIPE_SUBSCRIPTION_URL_HERE]" target="_blank" style="display: block; background-color: var(--accent-blue); color: var(--white); padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 1.1em; transition: background-color 0.3s;">
-                        Start Monthly Assurance &rarr;
-                    </a>
-                    <p style="font-size: 0.9em; color: gray; margin-top: 15px;">Ideal for SMBs lacking dedicated security staff.</p>
+                    <div class="pricing-grid">
+                        <div class="pricing-tier" style="border-color: var(--accent-blue);">
+                            <h3 style="color: var(--primary-blue); margin-top: 0;">MSA Basic</h3>
+                            <p>Ideal for initial compliance and external monitoring.</p>
+                            <div class="tier-price" style="color: var(--accent-blue);">$99/mo</div>
+                            
+                            <a href="https://buy.stripe.com/dRm4gz7Qja7caMN7495AQ01" target="_blank" class="tier-cta" style="background-color: var(--primary-blue); color: var(--white);">
+                                Select Basic Tier
+                            </a>
+                        </div>
+
+                        <div class="pricing-tier" style="border-color: var(--primary-blue); background-color: var(--f7f7f7);">
+                            <h3 style="color: var(--primary-blue); margin-top: 0;">MSA Complete</h3>
+                            <p>Includes deeper internal project oversight and advisory hours.</p>
+                            <div class="tier-price" style="color: var(--primary-blue);">$299/mo</div>
+                            
+                            <a href="https://buy.stripe.com/dRm4gz7Qja7caMN7495AQ01" target="_blank" class="tier-cta" style="background-color: var(--accent-blue); color: var(--dark-navy);">
+                                Select Complete Tier
+                            </a>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.9em; color: gray; text-align: center; margin-top: 15px;">Subscription billing is handled securely by Stripe.</p>
                 </div>
                 
                 <div style="flex: 2 1 450px;">
-                    <h2 style="color: var(--primary-blue);">Why Choose the MSA Retainer?</h2>
-                    <p>Technology should support your success, not slow you down. If constant security worries, unmanaged updates, or uncertain access controls are holding you back, it's time for continuous, expert oversight. The MSA Retainer ensures your foundational security elements are monitored and addressed proactively.</p>
+                    <h2 style="color: var(--primary-blue);">What This Product Solves</h2>
+                    <p>This retainer closes the continuous security gap often faced by SMBs, offering **proactive risk mitigation** by ensuring your foundational security elements (access controls, patching, monitoring) are reviewed and updated regularly. This prevents costly incidents before they happen.</p>
 
-                    <div class="value-feature">
-                        **1. Monthly Vulnerability Scan Summary** <br> A simple, actionable report identifying critical external issues.
-                    </div>
-                    <div class="value-feature">
-                        **2. Quarterly Access Control Review** <br> A structured audit of user accounts to enforce the principle of **least privilege**.
-                    </div>
-                    <div class="value-feature">
-                        **3. Critical Patch Management Alerts** <br> Timely, prioritized guidance on *what* software needs patching *when* to block common exploits.
-                    </div>
-
-                    <p style="margin-top: 30px;"><a href="contact.html" style="color: var(--primary-blue); font-weight: bold;">Schedule a call</a> to define the right tier for your business size and needs.</p>
+                    <h2 style="color: var(--primary-blue); margin-top: 40px;">Key Features & Deliverables (Included in both tiers)</h2>
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li style="margin-bottom: 15px; background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="%23044973" d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>') no-repeat left 5px; background-size: 18px; padding-left: 30px;">
+                            <strong>Monthly Vulnerability Scan Summary:</strong> A simple, actionable report identifying critical issues on external systems.
+                        </li>
+                        <li style="margin-bottom: 15px; background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="%23044973" d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>') no-repeat left 5px; background-size: 18px; padding-left: 30px;">
+                            <strong>Quarterly Access Control Review:</strong> Structured audit of user accounts to enforce the principle of **least privilege**.
+                        </li>
+                        <li style="margin-bottom: 15px; background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="%23044973" d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>') no-repeat left 5px; background-size: 18px; padding-left: 30px;">
+                            <strong>Critical Patch Management Alerts:</strong> Timely, prioritized guidance on *what* software needs patching *when* to avoid common exploits.
+                        </li>
+                    </ul>
                 </div>
             </section>
 
@@ -137,7 +185,11 @@
     </main>
     
     <footer>
-        <p>&copy; 2025 Welling Insights. All Rights Reserved. | <a href="contact.html" style="color: var(--accent-blue);">Contact Us</a></p>
+        <p>
+            <img src="images/wellinginsightslogo.jpg" alt="Welling Insights Logo" class="footer-logo"> 
+            &copy; 2025 Welling Insights. All Rights Reserved. | 
+            <a href="contact.html" style="color: var(--accent-blue);">Contact Us</a>
+        </p>
     </footer>
 
     <button onclick="topFunction()" id="back-to-top" title="Go to top">&#9650;</button> 
